@@ -1,0 +1,29 @@
+.block-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	> .block-img {
+		> a {
+			> img {
+			}
+		}
+	}
+	> .block-info {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		padding: 0 5px;
+		margin-top: 5px;
+		gap: 1.5rem;
+		> a {
+			align-self: flex-start;
+			> .title {
+				font-size: 20px;
+			}
+		}
+
+		> .favorite-rating {
+		}
+	}
+}

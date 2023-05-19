@@ -1,0 +1,136 @@
+.aloneManga {
+	background-image: url('../../../images/alone-manga.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	background-position: bottom;
+	box-shadow: inset 0 0 150px 100px rgba(0, 0, 0, 0.6);
+}
+
+.content {
+	max-width: 1120px;
+	margin: 0px auto;
+	padding: 0 10px;
+
+	display: flex;
+	justify-content: space-between;
+	gap: 1rem;
+
+	overflow-y: auto;
+	height: 85vh;
+
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}
+
+.img-block {
+	box-shadow: inset 0 0 150px 100px rgba(0, 0, 0, 0.6);
+	img {
+		border-radius: 5px;
+	}
+}
+
+.under-img-block {
+	display: flex;
+	flex-direction: column;
+}
+
+.text-block {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 1rem;
+	border-radius: 5px;
+	background-color: rgba(0, 0, 0, 0.3);
+	> .title-desc {
+		display: flex;
+		padding: 5px 10px;
+		height: 400px;
+		flex-direction: column;
+		gap: 0.8rem;
+		box-shadow: inset 0 0 150px 100px rgba(0, 0, 0, 0.4);
+		> .title {
+		}
+		> .description {
+			line-height: 1.3;
+		}
+	}
+}
+
+.text-block-alone {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.reader {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+
+	> .page-btn {
+		display: flex;
+		justify-content: center;
+		gap: 1rem;
+		align-items: center;
+
+		> svg {
+			border-radius: 50%;
+			border: none;
+			cursor: pointer;
+			background-color: rgba(154, 152, 118, 0.765);
+			&:hover {
+				background-color: rgba(154, 152, 118, 0.9);
+			}
+		}
+	}
+	> .pages {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.loading {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50vh;
+}
+
+.line {
+	width: 100%;
+	height: 1.5px;
+	background-color: #fbfbfb;
+}
+
+.type-block {
+	margin: 15px 0px 10px;
+	padding: 0 5px;
+	display: flex;
+	flex-direction: column;
+	gap: 0.7rem;
+	> .rating {
+		display: flex;
+		align-items: center;
+		gap: 0.4rem;
+	}
+	> .chapters {
+	}
+	> .volumes {
+	}
+	> .type {
+	}
+}
+
+.author-block {
+	padding: 5px;
+	> .name {
+		> a {
+			text-decoration: underline;
+		}
+	}
+}

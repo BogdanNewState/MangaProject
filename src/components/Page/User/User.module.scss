@@ -1,0 +1,69 @@
+.user {
+	background-image: url('../../../images/user-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-shadow: inset 0 0 50px 1000px rgba(0, 0, 0, 0.6);
+	height: 100vh;
+}
+
+.user-content {
+	max-width: 1120px;
+	margin: 0 auto;
+	padding: 0 1rem;
+}
+
+.user-manga {
+	width: 85%;
+	> ul {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+
+		overflow-y: auto;
+		max-height: 70vh;
+
+		&::-webkit-scrollbar {
+			width: 0px;
+		}
+
+		> li {
+			display: flex;
+			gap: 1rem;
+			justify-content: space-between;
+		}
+		> p {
+			text-align: center;
+			font-size: 20px;
+		}
+	}
+}
+
+.block-left {
+	display: flex;
+	align-items: flex-end;
+	gap: 1rem;
+
+	> img {
+		height: 100px;
+	}
+}
+
+.user-body {
+	display: flex;
+	gap: 2rem;
+	border: 1.5px solid #ffffff64;
+	padding: 10px;
+}
+
+.user-info {
+	width: 15%;
+	font-size: 18px;
+
+	> ul {
+		> li {
+			> span {
+				font-size: 20px;
+			}
+		}
+	}
+}

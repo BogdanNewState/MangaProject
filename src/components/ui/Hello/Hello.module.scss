@@ -1,0 +1,60 @@
+.hello {
+	padding: 10px 0;
+}
+
+.text {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	> h1 {
+		font-size: 1.5rem;
+		text-align: start;
+	}
+	> p {
+		font-size: 1rem;
+		text-align: end;
+		margin-right: 30px;
+	}
+}
+
+.block-buttons {
+	display: flex;
+	gap: 1rem;
+	margin-top: 15px;
+	> .block-search {
+		> .button-hide {
+			background-color: rgba(107, 117, 142, 0.5);
+
+			&:hover {
+				background-color: rgba(107, 117, 142, 0.7);
+			}
+		}
+		> .button-show {
+			background-color: rgba(107, 117, 142, 0.8);
+
+			&:hover {
+				background-color: rgb(107, 117, 142);
+			}
+		}
+	}
+}
+
+.button-show,
+.button-hide,
+.button-user {
+	padding: 8px 20px;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	color: #fbfbfb;
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+}
+
+.button-user {
+	background-color: rgba(66, 66, 81, 0.7);
+
+	&:hover {
+		background-color: rgb(66, 66, 81);
+	}
+}

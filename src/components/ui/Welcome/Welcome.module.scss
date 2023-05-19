@@ -1,0 +1,48 @@
+.welcome {
+	> .block-title {
+		margin-bottom: 25px;
+		> .title {
+			font-size: 38px;
+			> span {
+				font-size: 46px;
+				text-decoration: underline;
+			}
+		}
+	}
+	> .text {
+		font-size: 16px;
+		> span {
+			font-size: 18px;
+			font-weight: bold;
+			color: #afadad;
+		}
+	}
+	> .block-buttons {
+		display: flex;
+		gap: 1rem;
+		margin-top: 15px;
+		> a {
+			> .button-sign-in {
+				background-color: transparent;
+				border-color: #fbfbfb;
+			}
+		}
+
+		> a {
+			> .button-sign-up {
+				background-color: #103443;
+			}
+		}
+	}
+}
+
+.button-sign-in,
+.button-sign-up {
+	color: #fbfbfb;
+	padding: 10px 50px;
+	outline: none;
+	border: none;
+	border-radius: 3px;
+	border: 1px solid transparent;
+	cursor: pointer;
+}
